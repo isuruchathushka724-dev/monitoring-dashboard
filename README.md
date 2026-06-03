@@ -19,16 +19,20 @@ Knowing what's happening inside your infrastructure is critical. This project se
 
 ## 🧩 Architecture
 
+```
 Node Exporter (9100) ──► Prometheus (9090) ──► Grafana (3001)
-collects system        scrapes & stores       visualizes
-metrics                  metrics            dashboards
+   collects system        scrapes & stores       visualizes
+      metrics                  metrics            dashboards
+```
 
 ## 📁 Project Structure
 
+```
 monitoring-dashboard/
 ├── docker-compose.yml   # Orchestrates Prometheus, Node Exporter & Grafana
 ├── prometheus.yml       # Prometheus scrape configuration
 └── README.md            # Project documentation
+```
 
 ## 🚀 Quick Start
 
